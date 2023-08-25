@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.justchat.R;
 import com.example.justchat.Adapters.MessageAdapter;
 import com.example.justchat.Model.Chats;
 import com.example.justchat.Model.Users;
@@ -32,7 +31,7 @@ import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MessageActivity extends AppCompatActivity {
+public class Message extends AppCompatActivity {
 
 
     String friendid, message, myid;
@@ -236,7 +235,7 @@ public class MessageActivity extends AppCompatActivity {
                         chatsList.add(chats);
                     }
 
-                    messageAdapter = new MessageAdapter(MessageActivity.this, chatsList, imageURL);
+                    messageAdapter = new MessageAdapter(Message.this, chatsList, imageURL);
                     recyclerView.setAdapter(messageAdapter);
 
                 }

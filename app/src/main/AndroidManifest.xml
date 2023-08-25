@@ -23,22 +23,22 @@
         android:theme="@style/AppTheming"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterActivity"
-            android:parentActivityName=".StartActivity"
+            android:name=".Register"
+            android:parentActivityName=".Start"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:parentActivityName=".StartActivity"
+            android:name=".Login"
+            android:parentActivityName=".Start"
             android:exported="false"/>
         <activity
-            android:name=".MessageActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Message"
+            android:parentActivityName=".Main"
             android:exported="false"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".Main"
             android:exported="false"/>
         <activity
-            android:name=".StartActivity"
+            android:name=".Start"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

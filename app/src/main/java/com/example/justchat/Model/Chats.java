@@ -5,6 +5,10 @@ public class Chats {
     String sender, reciever, message;
     boolean isseen;
 
+    public Chats(){
+
+    }
+
 
     public Chats(String sender, String reciever, String message, boolean isseen) {
         this.sender = sender;
@@ -12,6 +16,8 @@ public class Chats {
         this.message = message;
         this.isseen = isseen;
     }
+
+
 
 
 

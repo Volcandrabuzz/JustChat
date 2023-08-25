@@ -10,7 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.justchat.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -19,7 +18,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
 
     MaterialEditText et_username, et_password, et_email;
@@ -110,22 +109,14 @@ public class RegisterActivity extends AppCompatActivity {
 
                     reference.setValue(hashMap).addOnCompleteListener(setValueTask -> {
                         if (setValueTask.isSuccessful()) {
-                            Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class)
+                            Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(Register.this, Login.class)
                                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                             finish();
                         } else {
-                            Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_SHORT).show();
                         }
                     });
-                }
-            } else {
-
-                Exception exception = task.getException();
-                if (exception != null) {
-                    Toast.makeText(RegisterActivity.this, "Registration failed: " + exception.getMessage(), Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -135,7 +126,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void onBackPressed(){
         super.onBackPressed();
-        Intent intent=new Intent(RegisterActivity.this,StartActivity.class);
+        Intent intent=new Intent(Register.this, Start.class);
         startActivity(intent);
         finish();
     }

@@ -16,7 +16,6 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
-import com.example.justchat.R;
 import com.example.justchat.Fragments.ChatsFragment;
 import com.example.justchat.Fragments.ProfileFragment;
 import com.example.justchat.Fragments.UsersFragment;
@@ -35,7 +34,7 @@ import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class Main extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     Toolbar toolbar;
@@ -180,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.logout) {
 
             mAuth.signOut();
-            Intent intent=new Intent(MainActivity.this, StartActivity.class);
+            Intent intent=new Intent(Main.this, Start.class);
             startActivity(intent);
             finish();
             return  true;

@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.justchat.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -19,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
-public class LoginActivity extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
 
     MaterialEditText et_email, et_password;
@@ -95,11 +94,11 @@ public class LoginActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
 
 
-                  Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                  Intent intent = new Intent(Login.this, Main.class);
                   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                   startActivity(intent);
                   finish();
-                    Toast.makeText(LoginActivity.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -115,12 +114,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
         user= FirebaseAuth.getInstance().getCurrentUser();
         if(user!=null){
-            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+            startActivity(new Intent(Login.this, Main.class));
         }
     }
     public void onBackPressed(){
         super.onBackPressed();
-        Intent intent=new Intent(LoginActivity.this,StartActivity.class);
+        Intent intent=new Intent(Login.this, Start.class);
         startActivity(intent);
         finish();
     }

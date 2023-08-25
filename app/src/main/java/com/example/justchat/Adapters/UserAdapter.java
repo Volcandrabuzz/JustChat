@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.justchat.R;
-import com.example.justchat.MessageActivity;
+import com.example.justchat.Message;
 import com.example.justchat.Model.Chats;
 import com.example.justchat.Model.Users;
 import com.google.firebase.auth.FirebaseAuth;
@@ -144,7 +144,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyHolder> {
 
             friendid = users.getId();
 
-            Intent intent = new Intent(context, MessageActivity.class);
+            Intent intent = new Intent(context, Message.class);
             intent.putExtra("friendid", friendid);
             context.startActivity(intent);
 

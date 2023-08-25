@@ -4,6 +4,10 @@ public class Chatslist {
 
     String id;
 
+    public Chatslist(){
+
+    }
+
     public Chatslist(String id) {
 
         this.id = id;

@@ -6,9 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.justchat.R;
-
-public class StartActivity extends AppCompatActivity {
+public class Start extends AppCompatActivity {
 
     Button login,register;
 
@@ -21,13 +19,13 @@ public class StartActivity extends AppCompatActivity {
         register=findViewById(R.id.register);
 
         login.setOnClickListener(v -> {
-            Intent intent=new Intent(StartActivity.this,LoginActivity.class);
+            Intent intent=new Intent(Start.this, Login.class);
             startActivity(intent);
             finish();
         });
 
         register.setOnClickListener(v -> {
-            Intent intent=new Intent(StartActivity.this,RegisterActivity.class);
+            Intent intent=new Intent(Start.this, Register.class);
             startActivity(intent);
             finish();
         });
