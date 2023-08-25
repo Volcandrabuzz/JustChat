@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "825684004496",
+    "firebase_url": "https://justchat-25f2c-default-rtdb.firebaseio.com",
+    "project_id": "justchat-25f2c",
+    "storage_bucket": "justchat-25f2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825684004496:android:bac5b0a1132bedd6a2d215",
+        "android_client_info": {
+          "package_name": "com.example.justchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825684004496-afghoiaio7guobjfntv48codu4lnn1d4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAku93iTt76OR419di2Oi4UCm3PKPhxYSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825684004496-afghoiaio7guobjfntv48codu4lnn1d4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825684004496:android:9d45ff33117b6a8ca2d215",
+        "android_client_info": {
+          "package_name": "com.example.justchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825684004496-ki25829dl94tflhjeiumh2rprdp7t28h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.justchat",
+            "certificate_hash": "e4dbf4d0ce176ae005fa8656496b4787bac62bf0"
+          }
+        },
+        {
+          "client_id": "825684004496-afghoiaio7guobjfntv48codu4lnn1d4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAku93iTt76OR419di2Oi4UCm3PKPhxYSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825684004496-afghoiaio7guobjfntv48codu4lnn1d4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
